@@ -1,8 +1,11 @@
-import logo from "./logo.svg";
+
 import "./App.css";
+import Body from "./Components/Body";
 
 function App() {
-  return <div className="App font-bold text-3xl bg-emerald-400">NetFlix-GPT</div>;
+  return <div >
+    <Body/>
+  </div>;
 }
 
 export default App;
