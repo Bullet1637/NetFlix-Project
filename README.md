@@ -28,7 +28,20 @@
 14. - impliment sign in user api authentication 
 15. - create redux store for add and remove the user
 16. - sign up && sign in && Sign out complete
-17. - update sign up      
+17. - update sign up   
+18. - bugfix of sign up and profile picture update 
+19. - bugfix :-if my user is not log in so redirect to the log in page only and  vise-varsa
+20. - bugfix :- we unsubcribe to the onAuthstate change callback
+21. - constant value to the harcoded value
+22. - register in tmdb api , create app and register app
+23. - made api call for now playing movie
+24. - planning for main container and secondary container
+25. - featch data for trailer video
+26. - custom hook for nowplaying movies
+27. - updated the store with a video trailer
+28. - embeded the youtube video and make it autoplay and mute
+29. - make main container look awsome
+
 
 
 # Features

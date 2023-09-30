@@ -10,16 +10,14 @@ import { auth } from "../utils/Firebase";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/UserSlice";
+import { USRE_AVATAR } from "../utils/Constants";
 const LogIn = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorState, setErrorState] = useState(null);
   const email = useRef(null);
   const password = useRef(null);
   const name = useRef(null);
-  const navigate = useNavigate();
-     const dispatch = useDispatch();
-  // console.log(email.current.value);
-  // console.log(password.current.value);
+  const dispatch = useDispatch();
   const handleFormSubmit = () => {
     // validation part
 
@@ -36,26 +34,24 @@ const LogIn = () => {
         auth,
         email.current.value,
         password.current.value,
-        name.current.value, 
+        name.current.value
       )
         .then((userCredential) => {
           const user = userCredential.user;
           updateProfile(user, {
             displayName: name.current.value,
-            photoURL:
-              "https://media-bom1-1.cdn.whatsapp.net/v/t61.24694-24/347530193_1004855944218458_5963343001693566115_n.jpg?ccb=11-4&oh=01_AdQjIQHgg_7bvi9NS1H1U3I7SgTXOYjQXAHZO-bwfEBtYw&oe=65204568&_nc_sid=000000&_nc_cat=102",
+            photoURL: USRE_AVATAR,
           })
             .then(() => {
-                 const { uid, email, displayName, photoURL } = auth.currentUser;
-                 dispatch(
-                   addUser({
-                     uid: uid,
-                     email: email,
-                     displayName: displayName,
-                     photoURL: photoURL,
-                   })
-                 );
-              navigate("/browse");
+              const { uid, email, displayName, photoURL } = auth.currentUser;
+              dispatch(
+                addUser({
+                  uid: uid,
+                  email: email,
+                  displayName: displayName,
+                  photoURL: photoURL,
+                })
+              );
             })
             .catch((error) => {
               setErrorState(error.message);
@@ -75,8 +71,6 @@ const LogIn = () => {
       )
         .then((userCredential) => {
           const user = userCredential.user;
-          console.log(user);
-          navigate("/browse");
         })
         .catch((error) => {
           const errorCode = error.code;
