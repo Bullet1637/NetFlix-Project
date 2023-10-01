@@ -3,7 +3,7 @@ import React from "react";
 const VideoTitle = ({ original_title, overview, poster_path }) => {
   return (
     <>
-      <div className="w-screen aspect-video pt-[20%] px-24 absolute bg-gradient-to-r from-black text-white">
+      <div className="w-screen aspect-video pt-[10%] px-12 absolute bg-gradient-to-r from-black text-white">
         {/* <img src={poster_path} alt="poster" /> */}
         <h1 className="text-6xl font-bold">{original_title}</h1>
         <p className="py-6 text-lg w-1/3">{overview}</p>

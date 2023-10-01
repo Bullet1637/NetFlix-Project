@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
-import { API_OPTION } from "../utils/Constants";
-import { useDispatch, useSelector } from "react-redux";
-import { addTailerVideo } from "../utils/MovieSlice";
+import React from "react";
+
+import {  useSelector } from "react-redux";
+
 import useTrailerVideo from "../Hooks/useTrailerVideo";
 
 const VideoBackground = ({ movieId }) => {
@@ -20,7 +20,7 @@ const VideoBackground = ({ movieId }) => {
           allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         ></iframe>
       </div>
-      ;
+      
     </>
   );
 };

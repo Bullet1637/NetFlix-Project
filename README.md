@@ -41,7 +41,10 @@
 27. - updated the store with a video trailer
 28. - embeded the youtube video and make it autoplay and mute
 29. - make main container look awsome
-
+30. - planning for secondary container
+31. - build movie list 
+32. - build movie card
+33. - 
 
 
 # Features
