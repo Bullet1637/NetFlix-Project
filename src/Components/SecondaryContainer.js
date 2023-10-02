@@ -7,10 +7,7 @@ const SecondaryContainer = () => {
   const PopularMovies = useSelector((store) => store?.movies?.popularMovies);
   const TopRatedMovies = useSelector((store) => store?.movies?.topratedMovies);
   const UpComingMovies = useSelector((store) => store?.movies?.upcomingMovies);
-  console.log("PopularMovies", PopularMovies);
-  console.log("NowPlaying", NowPlaying);
-  console.log("TopRatedMovies", TopRatedMovies);
-  console.log("UpComingMovies", UpComingMovies);
+
 
   return (
     <>

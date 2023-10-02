@@ -3,6 +3,7 @@ import LogIn from './LogIn'
 import Browse from './Browse'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import ErrorPage from './ErrorPage'
+import GPTSearch from './GPTSearch'
 
 const Body = () => {
 
@@ -20,6 +21,10 @@ const Body = () => {
         path: "/error-page",
         element: <ErrorPage />,
       },
+      {
+        path:"/gpt-search",
+        element: <GPTSearch/>,
+      }
     ]);
 
 

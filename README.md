@@ -44,7 +44,13 @@
 30. - planning for secondary container
 31. - build movie list 
 32. - build movie card
-33. - 
+33. - netFlix GPT building start
+34. - -add gpt search page and create route
+35. - gpt search bar
+36. - add language dropdown and apply language functionality
+
+
+
 
 
 # Features
