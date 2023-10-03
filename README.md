@@ -30,7 +30,7 @@
 16. - sign up && sign in && Sign out complete
 17. - update sign up   
 18. - bugfix of sign up and profile picture update 
-19. - bugfix :-if my user is not log in so redirect to the log in page only and  vise-varsa
+19. - bugfix :- if my user is not log in so redirect to the log in page only and  vise-varsa
 20. - bugfix :- we unsubcribe to the onAuthstate change callback
 21. - constant value to the harcoded value
 22. - register in tmdb api , create app and register app
@@ -45,9 +45,13 @@
 31. - build movie list 
 32. - build movie card
 33. - netFlix GPT building start
-34. - -add gpt search page and create route
+34. - add gpt search page and create route
 35. - gpt search bar
 36. - add language dropdown and apply language functionality
+37. - intigreate the open api
+38. - store search data in redux
+39. - build movies suggestion component
+40. - reuse movie suggetion component scroll
 
 
 

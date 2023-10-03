@@ -12,7 +12,7 @@ import { useSelector } from "react-redux";
 const Browse = () => {
   const GPTState = useSelector((store) => store?.gptSearch?.toggleGPTSearch);
 
-  console.log("GPTState", GPTState);
+  // console.log("GPTState", GPTState);
   useNowPlayingMovies();
   usePopularMovies();
   useTopRatedMovies();
