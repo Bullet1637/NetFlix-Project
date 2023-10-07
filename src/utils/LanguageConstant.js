@@ -6,9 +6,13 @@ export const lang = {
   hindi: {
     search: "खोज",
     gptSearchPlaceholder: "आज आप क्या खोजना चाहेंगे?",
-},
-spanish: {
+  },
+  spanish: {
     search: "buscar",
     gptSearchPlaceholder: "¿Qué te gustaría buscar hoy?",
+  },
+  marathi: {
+    search: "शोधा",
+    gptSearchPlaceholder: "तुम्हाला आज काय शोधायचे आहे?",
   },
 };
